@@ -5,7 +5,7 @@
   "main": "app.js",
   "scripts": {
     "start": "babel-node .",
-    "build": "browserify client/main.js -t babelify > public/assets/bundle.js",
+    "build": "mkdir public/assets && browserify client/main.js -t babelify > public/assets/bundle.js",
     "postinstall": "npm run build"
   },
   "repository": {
